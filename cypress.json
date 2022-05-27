@@ -1,1 +1,17 @@
-{}
+{
+    "chromeWebSecurity": false,
+    "failOnStatusCode": false,
+    "defaultCommandTimeout": 4000,
+    "pageLoadTimeout": 100000,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir":"cypress/reports",
+        "reportFilename":"AutomationReport",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts":true
+
+    },
+    "video": false
+}
