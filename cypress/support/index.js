@@ -18,3 +18,17 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach(() => {
+    // cy.setCookie(
+    //   "session-cookie",
+    //   "value"
+    // );
+    cy.visit("https://www.saucedemo.com", {
+      timeout: 80000
+    });
+  });
+
+Cypress.Screenshot.defaults({
+    screenshotOnRunFailure: false
+  });

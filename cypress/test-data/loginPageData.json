@@ -1,0 +1,7 @@
+{
+    "username":"standard_user",
+    "password":"secret_sauce",
+    "userNameMandatory":"Epic sadface: Username is required",
+    "passwordMandatory":"Epic sadface: Password is required",
+    "invalidUser":"Epic sadface: Username and password do not match any user in this service"
+}
