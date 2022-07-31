@@ -18,7 +18,7 @@ jobs:
           command: "npm install"
       - run:
           name: "Run IT tests"
-          command: "node_modules/.bin/cypress run --group it-tests --spec 'cypress/integration/Integration-tests/*'"
+          command: "node_modules/.bin/cypress run --group it-tests --spec 'cypress/integration/integ/*.spec.js'"
 
   run-e2e-tests:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
@@ -34,7 +34,7 @@ jobs:
           command: "npm install"
       - run:
           name: "Run e2e tests"
-          command: "node_modules/.bin/cypress run --group it-tests --spec 'cypress/integration/e2e/*'"
+          command: "node_modules/.bin/cypress run --group it-tests --spec 'cypress/integration/e2e/*.spec.js'"
 
 
 workflows:
