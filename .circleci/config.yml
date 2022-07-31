@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: "Install node modules"
-          command: "npm install && node_modules/.bin/cypress run --group it-tests --spec 'cypress/integration/integ/*.spec.js'"
+          command: "npm install && node_modules/.bin/cypress run --browser chrome --headless"
 
   run-e2e-tests:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
@@ -38,4 +38,3 @@ workflows:
   say-hello-workflow:
     jobs:
       - run-it-tests
-      - run-e2e-tests
