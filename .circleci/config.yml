@@ -33,10 +33,11 @@ jobs:
           command: "npm install"
       - run:
           name: "Run e2e tests"
-          command: "node_modules/.bin/cypress run --group it-tests --spec 'cypress/integration/e2e/*.spec.js'"
+          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integration/e2e/*.spec.js'"
 
 
 workflows:
-  say-hello-workflow:
+  Cypress-web-automation:
     jobs:
       - run-it-tests
+      - run-e2e-tests
