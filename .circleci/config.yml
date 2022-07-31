@@ -17,7 +17,7 @@ jobs:
           name: "Install node modules"
           command: "npm install"
       - run:
-          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integ/*'"
+          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integration/integ/*.spec.js'"
 
   run-e2e-tests:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
