@@ -7,6 +7,12 @@ The Approach:
 
 Stack:
 
+1. cypress
+2. js
+3. mochawesome reports
+4. CI: circleCI
+5. Image: cypress/browsers:latest
+
 Steps to run:
 
 CI run:
