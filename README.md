@@ -3,7 +3,7 @@ Test automation of saucedemo site using Cypress.io and javascript :construction:
 
 ---
 
-The Approach:
+The Approach(WIP):
 
 Stack:
 
@@ -11,14 +11,16 @@ Stack:
 2. js
 3. mochawesome reports
 4. CI: circleCI
-5. Image: cypress/browsers:latest
+5. Image: *`cypress/browsers:latest`*
 ---
 
 Steps to run:
+
 1. from root run *`npm install`*
-2. to open cypress: *`node_modules/.bin/cypress open`*
+2. to open cypress: *`npm run cypress:open`*  Or *`node_modules/.bin/cypress open`*
 3. to run integ specs: *`node_modules/.bin/cypress run --browser chrome --spec 'cypress/integration/integ/*.spec.js'`*
 4. to run e2e specs: *`node_modules/.bin/cypress run --browser chrome --spec 'cypress/integration/e2e/*.spec.js'`*
+5. to run all tests: *`npm run cypress:test`*
 
 ---
 
