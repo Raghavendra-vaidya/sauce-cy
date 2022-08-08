@@ -7,13 +7,20 @@ The Approach:
 
 Stack:
 
-1. cypress
+1. cypress: *`9.7.0`*
 2. js
 3. mochawesome reports
 4. CI: circleCI
 5. Image: cypress/browsers:latest
+---
 
 Steps to run:
+1. from root run *`npm install`*
+2. to open cypress: *`node_modules/.bin/cypress open`*
+3. to run integ specs: *`node_modules/.bin/cypress run --browser chrome --spec 'cypress/integration/integ/*.spec.js'`*
+4. to run e2e specs: *`node_modules/.bin/cypress run --browser chrome --spec 'cypress/integration/e2e/*.spec.js'`*
+
+---
 
 CI run:
 Overall workflow:
