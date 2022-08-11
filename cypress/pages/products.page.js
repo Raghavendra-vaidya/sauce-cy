@@ -1,6 +1,7 @@
 import {PRODUCT_PAGE_CONSTANTS} from '../identifiers';
 
-const {dataSortElement} = PRODUCT_PAGE_CONSTANTS;
+const {dataSortElement, productsTitle} = PRODUCT_PAGE_CONSTANTS;
+
 
 export class ProductsPage{
 
@@ -10,7 +11,9 @@ export class ProductsPage{
         return cy.get(dataSortElement);
     }
 
-
+    getProductsTitle(){
+        return cy.get(productsTitle);
+    }
 
 }
 

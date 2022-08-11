@@ -1,4 +1,5 @@
 
 export const PRODUCT_PAGE_CONSTANTS = {
-    dataSortElement: "[data-test='product_sort_container']"
+    dataSortElement: "[data-test='product_sort_container']",
+    productsTitle: ".title"
 }

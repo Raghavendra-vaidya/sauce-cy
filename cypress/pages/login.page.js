@@ -69,8 +69,6 @@ export class LoginPage {
         this.getLoginButtonELement().click();
     }
 
-
-
 }
 
 export default LoginPage;
