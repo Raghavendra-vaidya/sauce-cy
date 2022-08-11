@@ -39,5 +39,11 @@ jobs:
 workflows:
   Cypress-web-automation:
     jobs:
-      - run-it-tests
-      - run-e2e-tests
+      - run-it-tests:
+          filters:
+            branches:
+              only: main
+      - run-e2e-tests:
+          filters:
+            branches:
+              only: main
