@@ -23,19 +23,4 @@ describe('Login screen e2e tests', () =>
         .should('have.text', "Open Menu")
     });
 
-    it('Should login and add backpack to cart, verify', () => {
-        products.addProductToCart(PRODUCT_PAGE_CONSTANTS.backpackAddToCard);
-        cy.wait(2000);
-        cy.get(PRODUCT_PAGE_CONSTANTS.backpackRemoveFromCart).scrollIntoView();
-        //cy.scrollTo(0,0)
-        cy.wait(3000);
-        cy.get(PRODUCT_PAGE_CONSTANTS.backpackRemoveFromCart).eq(0).should('be.visible');
-        products.navigateToShoppingCart();
-        cy.get(SHOPPING_CART_CONSTANTS.itemTitle)
-        .should('be.visible')
-        .should('have.text','Sauce Labs Backpack');
-
-    });
-
-
 });
