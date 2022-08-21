@@ -4,7 +4,10 @@ const {
     dataSortElement, 
     productsTitle,
     hamburgerMenu,
-    shoppingcart} = PRODUCT_PAGE_CONSTANTS;
+    shoppingcart,
+    addToCartGeneric,
+    productPrice,
+    productDescription} = PRODUCT_PAGE_CONSTANTS;
 
 export class ProductsPage{
 
@@ -22,6 +25,21 @@ export class ProductsPage{
         return cy.get(hamburgerMenu);
     }
 
+    getAddToCartGeneric(){
+        return cy.get(addToCartGeneric);
+    }
+
+    getProductPriceGeneric(){
+        return cy.get(productPrice);
+    }
+
+    getProductDescription(){
+        return cy.get(productDescription);
+    }
+
+    getShoppingcart(){
+        return cy.get(shoppingcart);
+    }
     addProductToCart(productIdentifier){
         cy.get(productIdentifier).click();
     }
@@ -29,6 +47,7 @@ export class ProductsPage{
     navigateToShoppingCart(){
         cy.get(shoppingcart).click();
     }
+    
 
 }
 
