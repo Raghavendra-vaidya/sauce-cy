@@ -18,7 +18,7 @@ jobs:
           command: "npm install"
       - run:
           name: "Running IT tests"
-          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integration/integ/*.spec.js'"
+          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integration/integ/*'"
       - run:
           name: "Merge reports and generate full report"
           command: "npm run final_report"
@@ -40,7 +40,7 @@ jobs:
           command: "npm install"
       - run:
           name: "Run e2e tests"
-          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integration/e2e/*.spec.js'"
+          command: "node_modules/.bin/cypress run --browser chrome --headless --spec 'cypress/integration/e2e/*'"
       - run:
           name: "Merge reports and generate full report"
           command: "npm run final_report"
