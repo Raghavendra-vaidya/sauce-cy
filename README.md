@@ -39,5 +39,15 @@ CI Jobs:
 <img width="1154" alt="image" src="https://user-images.githubusercontent.com/30006440/182022033-e5f0803c-17a4-4b79-b185-76ed15b40d3d.png">
 
 
-Sample reports(WIP):
+Sample reports:
+
+e2e sample report is attached below. Same can be found on ci artifacts location:
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/30006440/185979665-a07e6e3a-485e-4994-8c14-5a6cadd16bbd.png">
+
+---
+
+IT sample report is attached below. Same can be found on ci artifacts location:
+
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/30006440/185980026-0806ae52-2afa-4443-8567-dd955f8b83cd.png">
 
