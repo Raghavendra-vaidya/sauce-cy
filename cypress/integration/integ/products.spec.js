@@ -64,7 +64,7 @@ describe('Product page tests', () => {
       });
 
       it('Should verify shopping cart is displayed in products page', () => {
-            products.getShoppingcart().should('be.visible')
-      });
+            products.getShoppingcart().should('not.be.visible')
+      })
      
 });

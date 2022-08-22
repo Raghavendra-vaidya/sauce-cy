@@ -7,10 +7,11 @@
     "reporterOptions": {
         "reportDir":"cypress/reports",
         "reportFilename":"AutomationReport",
-        "overwrite": false,
+        "overwrite": true,
         "html": true,
         "json": true,
-        "charts":true
+        "charts":true,
+        "timestamp":"mmddyy_HHMMss"
 
     },
     "video": false

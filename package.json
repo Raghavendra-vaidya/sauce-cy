@@ -6,10 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:test": "cypress test",
-    "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/total.json",
-    "generate_merged_report":"marge cypress/reports/total.json --reportDir ./ --inline",
-    "final_report":"npm run merge && npm run generate_merged_report"  
+    "deleteReports": "rm -rf cypress/reports/",
+    "cypress:test": "cypress run",
+    "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/SauceCy.json",
+    "generate_merged_report": "marge cypress/reports/SauceCy.json --reportDir ./ --inline",
+    "final_report": "npm run merge && npm run generate_merged_report"
   },
   "repository": {
     "type": "git",
@@ -22,11 +23,13 @@
   },
   "homepage": "https://github.com/Raghavendra-vaidya/sauce-cy#readme",
   "dependencies": {
-    "cypress": "^9.7.0",
-    "chai": "4.3.6"
+    "chai": "4.3.6",
+    "cypress": "^9.7.0"
   },
   "devDependencies": {
+    "mocha": "^10.0.0",
     "mochawesome": "^7.1.3",
-    "mochawesome-merge": "^4.2.1"
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
