@@ -3,9 +3,6 @@ Test automation of saucedemo site using Cypress.io and javascript
 
 ---
 
-The Approach(WIP):
-
----
 
 
 Stack:
