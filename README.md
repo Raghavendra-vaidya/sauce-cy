@@ -10,7 +10,7 @@ The Approach(WIP):
 
 Stack:
 
-1. cypress: *`9.7.0`*
+1. cypress: *`9.x.x`*
 2. js
 3. mochawesome reports
 4. CI: circleCI
