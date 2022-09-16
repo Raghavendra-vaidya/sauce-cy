@@ -1,5 +1,5 @@
 # sauce-cy
-Test automation of saucedemo site using Cypress.io and javascript
+Test automation of saucedemo site using Cypress.io and javascript :computer: 
 
 ---
 
