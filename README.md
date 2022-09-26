@@ -8,7 +8,7 @@ Test automation of saucedemo site using Cypress.io and javascript :computer:
 Stack:
 
 1. cypress: *`9.x.x`*
-2. js
+2. javascript
 3. mochawesome reports
 4. CI: circleCI
 5. Image: *`cypress/browsers:latest`*
