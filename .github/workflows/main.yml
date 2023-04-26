@@ -32,6 +32,6 @@ jobs:
         if: always()
         with:
           name: final-report
-          path: finalReport.html
+          path: SauceCy.html
 
    

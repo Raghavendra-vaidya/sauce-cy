@@ -8,7 +8,7 @@
     "cypress:open": "cypress open",
     "deleteReports": "rm -rf cypress/reports/",
     "cypress:test": "cypress run",
-    "merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/SauceCy.json",
+    "merge": "mochawesome-merge cypress/reports/*.json>cypress/reports/SauceCy.json",
     "generate_merged_report": "marge cypress/reports/SauceCy.json --reportDir ./ --inline",
     "final_report": "npm run merge && npm run generate_merged_report"
   },
