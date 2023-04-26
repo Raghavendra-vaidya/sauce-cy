@@ -2,14 +2,14 @@ import { LOGIN_PAGE_CONSTANTS } from '../identifiers';
 
 
 const {
-    username, 
-    password, 
-    loginBtn, 
-    brandImage, 
-    botIcon, 
-    loginCredsSection, 
-    loginPasswordSection, 
-    errorClass, 
+    username,
+    password,
+    loginBtn,
+    brandImage,
+    botIcon,
+    loginCredsSection,
+    loginPasswordSection,
+    errorClass,
     errorMessageElement } = LOGIN_PAGE_CONSTANTS;
 
 export class LoginPage {
@@ -47,26 +47,12 @@ export class LoginPage {
         return cy.get(loginPasswordSection);
     }
 
-    getErrorClassElement(){
+    getErrorClassElement() {
         return cy.get(errorClass);
     }
 
-    geterrorMessageElement(){
+    geterrorMessageElement() {
         return cy.get(errorMessageElement);
-    }
-
-    // action functions
-
-    typeUserName(userNameValue) {
-        this.getUsernameElement().type(userNameValue)
-    }
-
-    typePassword(passwordValue) {
-        this.getPasswordElement().type(passwordValue);
-    }
-
-    clickLogin() {
-        this.getLoginButtonELement().click();
     }
 
 }

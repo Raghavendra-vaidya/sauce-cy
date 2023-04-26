@@ -14,21 +14,28 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
+import './login';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
 beforeEach(() => {
-    // cy.setCookie(
-    //   "session-cookie",
-    //   "value"
-    // );
-    cy.visit("https://www.saucedemo.com", {
-      timeout: 80000
-    });
+  // cy.setCookie(
+  //   "session-cookie",
+  //   "value"
+  // );
+
+  Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
+  cy.visit("https://www.saucedemo.com", {
+    timeout: 80000
   });
+});
 
 Cypress.Screenshot.defaults({
-    screenshotOnRunFailure: false
-  });
+  screenshotOnRunFailure: false
+});

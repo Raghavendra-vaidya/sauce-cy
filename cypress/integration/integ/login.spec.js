@@ -31,24 +31,24 @@ describe('Login screen IT tests',
 
 
             it('Verify mandatory username', () => {
-                login.clickLogin();
+                cy.clickLogin();
                 login.getErrorClassElement().should('be.visible');
                 login.geterrorMessageElement().contains(data.userNameMandatory)
 
             });
 
             it('Verify mandatory password', () => {
-                login.typeUserName(data.username);
-                login.clickLogin();
+                cy.typeUserName(data.username);
+                cy.clickLogin();
                 login.getErrorClassElement().should('be.visible');
                 login.geterrorMessageElement().contains(data.passwordMandatory)
 
             });
 
             it('Verify invalid user', () => {
-                login.typeUserName('asdasd');
-                login.typePassword('asdas');
-                login.clickLogin();
+                cy.typeUserName('asdasd');
+                cy.typePassword('asdas');
+                cy.clickLogin();
                 login.geterrorMessageElement().contains(data.invalidUser)
             });
 
@@ -58,9 +58,9 @@ describe('Login screen IT tests',
         context("Verify Login", () => {
 
             it('Verify successful login', () => {
-                login.typeUserName(data.username);
-                login.typePassword(data.password);
-                login.clickLogin();
+                cy.typeUserName(data.username);
+                cy.typePassword(data.password);
+                cy.clickLogin();
                 products.getSortElement().should('be.visible');
             });
 
