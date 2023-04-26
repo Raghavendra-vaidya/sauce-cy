@@ -5,9 +5,33 @@ jobs:
     runs-on: ubuntu-22.04
     name: E2E on Chrome
     steps:
-      - uses: actions/checkout@v3
-      - uses: cypress-io/github-action@v5
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v5 # use the explicit version number
         with:
+          # build: npm run build
           browser: chrome
           headed: false
+          
+      - name: merge reports
+        run: npm run final_report
+        if: always()
+    
+      - name: store reports directory
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: reports-directory
+          path: cypress/reports
+
+      - name: store final report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: final-report
+          path: finalReport.html
+
    
