@@ -23,7 +23,13 @@ Steps to run:
 5. to run all tests: *`npm run cypress:test`*
 
 ---
+GH Actions:
+![image](https://user-images.githubusercontent.com/30006440/234485246-1e8e5252-0873-4c66-8521-9cf6a1d7d111.png)
 
+
+![image](https://user-images.githubusercontent.com/30006440/234485355-d11e8ef3-6e24-4492-b3ac-1005f2da2dfb.png)
+
+---
 CI run:
 Overall workflow:
 
