@@ -23,10 +23,12 @@ Steps to run:
 
 ---
 GH Actions:
-![image](https://user-images.githubusercontent.com/30006440/234485246-1e8e5252-0873-4c66-8521-9cf6a1d7d111.png)
+![image](https://user-images.githubusercontent.com/30006440/234488494-99b0450b-89cf-45b9-843a-b8d00ef38e18.png)
+
 
 ---
-![image](https://user-images.githubusercontent.com/30006440/234485355-d11e8ef3-6e24-4492-b3ac-1005f2da2dfb.png)
+![image](https://user-images.githubusercontent.com/30006440/234488616-f2497e8d-296f-40b5-8bf7-a5e7283b2090.png)
+
 
 ---
 CircleCI :
