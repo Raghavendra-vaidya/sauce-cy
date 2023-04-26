@@ -26,11 +26,11 @@ Steps to run:
 GH Actions:
 ![image](https://user-images.githubusercontent.com/30006440/234485246-1e8e5252-0873-4c66-8521-9cf6a1d7d111.png)
 
-
+---
 ![image](https://user-images.githubusercontent.com/30006440/234485355-d11e8ef3-6e24-4492-b3ac-1005f2da2dfb.png)
 
 ---
-CI run:
+CircleCI :
 Overall workflow:
 
 <img width="1170" alt="image" src="https://user-images.githubusercontent.com/30006440/182022006-ae8b3e79-2baf-49db-96af-82148f6e2cf4.png">
