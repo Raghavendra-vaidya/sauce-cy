@@ -10,17 +10,16 @@ Stack:
 1. cypress: *`9.x.x`*
 2. javascript
 3. mochawesome reports
-4. CI: circleCI
-5. Image: *`cypress/browsers:latest`*
+4. CI: Github actions and circleCI
 ---
 
 Steps to run:
 
 1. from root run *`npm install`*
-2. to open cypress: *`npm run cypress:open`*  Or *`node_modules/.bin/cypress open`*
-3. to run integ specs: *`node_modules/.bin/cypress run --browser chrome --spec 'cypress/integration/integ/*.spec.js'`*
-4. to run e2e specs: *`node_modules/.bin/cypress run --browser chrome --spec 'cypress/integration/e2e/*.spec.js'`*
-5. to run all tests: *`npm run cypress:test`*
+2. to open cypress: *`npx cypress open`* Or *`npm run cypress:open`*  Or *`node_modules/.bin/cypress open`*
+3. to run integ specs: *`npx cypress run --browser chrome --spec 'cypress/integration/integ/*.spec.js'`*
+4. to run e2e specs: *`npx cypress run --browser chrome --spec 'cypress/integration/e2e/*.spec.js'`*
+5. to run all tests: *`npx cypress run`*
 
 ---
 GH Actions:
